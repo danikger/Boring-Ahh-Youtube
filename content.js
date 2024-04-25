@@ -32,7 +32,7 @@ chrome.storage.onChanged.addListener((changes, namespace) => {
  * Adds an iframe with a YouTube video to the page.
  */
 function addIframe() {
-    const youtubeVideoUrl = "https://www.youtube.com/embed/vnM6WJrWdkk?si=QI0-ArkjWoeXyWXP&t=42459&autoplay=1&mute=1&list=PLXq4F588D0dLJjnkN1ERhRsn2JsZs43Kp&loop=1";
+    const youtubeVideoUrl = "https://www.youtube.com/embed/vnM6WJrWdkk?si=QI0-ArkjWoeXyWXP&t=738&autoplay=1&mute=1&list=PLXq4F588D0dLJjnkN1ERhRsn2JsZs43Kp&loop=1";
 
     // Create div element
     const div = document.createElement("div");
