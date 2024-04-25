@@ -3,7 +3,7 @@
   "name": "Boring Ahh YouTube",
   "version": "1.0",
   "description": "Enjoy your brain rot with Subway Surfers playing beside your every YouTube video.",
-  "permissions": ["activeTab", "storage", "scripting"],
+  "permissions": ["storage", "scripting"],
   "background": {
     "service_worker": "background.js"
   },
