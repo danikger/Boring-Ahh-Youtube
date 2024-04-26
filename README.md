@@ -6,7 +6,7 @@
 ![extension showcase](https://github.com/danikger/Boring-Ahh-Youtube/blob/main/Screenshots/screenshot1.png?raw=true)
 <br/>
 <br/>
-## To add this extension to your browser:<br/>
+## To add this extension to Chrome:<br/>
   **1.** Save the extension folder on your device.<br/>
   **2.** Go to chrome://extensions/.<br/>
   **3.** At the top right, turn on Developer mode.<br/>
