@@ -2,6 +2,8 @@
 
 'Boring Ahh YouTube' is a browser extension that adds Subway Surfers gameplay beside every YouTube video.
 
+![extension showcase](https://github.com/danikger/Boring-Ahh-Youtube/blob/main/Screenshots/screenshot1.png?raw=true)
+
 ## To add this extension to your browser:<br/>
   **1.** Save the extension folder on your device.<br/>
   **2.** Go to chrome://extensions/.<br/>
