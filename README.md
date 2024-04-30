@@ -12,5 +12,6 @@
   **3.** At the top right, turn on Developer mode.<br/>
   **4.** Click Load unpacked.<br/>
   **5.** Find and select the extension folder.
-<br/>
-**Or... get it on the Chrome Web Store [here](https://chromewebstore.google.com/detail/boring-ahh-youtube/hhccjddndginoajnbcedjhcomaekopdc)**
+
+  
+### Or... get it on the Chrome Web Store [here](https://chromewebstore.google.com/detail/boring-ahh-youtube/hhccjddndginoajnbcedjhcomaekopdc)
