@@ -1,7 +1,5 @@
-let extensionOn = true;
-
 chrome.storage.sync.get('extensionOn', (data) => {
-    extensionOn = data.extensionOn;
+    extensionOn = data.extensionOn !== undefined ? data.extensionOn : false; // Default to false if undefined
     if (extensionOn) {
         // Add the iframe
         if (!document.querySelector('#iframe-container')) {
@@ -58,26 +56,26 @@ function addIframe() {
 
     // Find the main video player and insert the new div with iframe inside it
     const videoContainer = document.querySelector(".html5-video-container");
-    videoContainer.parentNode.insertBefore(div, videoContainer.nextSibling);
-    videoContainer.style.display = "inline-block";
-    videoContainer.style.width = "100%";
-    videoContainer.style.display = "relative";
+    if (videoContainer) {
+        videoContainer.parentNode.insertBefore(div, videoContainer.nextSibling);
+        videoContainer.style.display = "inline-block";
+        videoContainer.style.width = "100%";
+        videoContainer.style.display = "relative";
 
-    const videoPlayer = document.querySelector(".html5-video-player");
-    videoPlayer.style.display = "flex";
+        const videoPlayer = document.querySelector(".html5-video-player");
+        if (videoPlayer) videoPlayer.style.display = "flex";
 
-    const mainVideo = document.querySelector(".html5-main-video");
-    mainVideo.style.width = "100%";
-    mainVideo.style.maxWidth = "100%";
-    mainVideo.style.left = "0px";
+        const mainVideo = document.querySelector(".html5-main-video");
+        if (mainVideo) {
+            mainVideo.style.width = "100%";
+            mainVideo.style.maxWidth = "100%";
+            mainVideo.style.left = "0px";
 
-    // Check for changes in the page and reset the width to 100% and left to 0px
-    const observer = new MutationObserver(() => {
-        mainVideo.style.width = "100%";
-        mainVideo.style.left = "0px";
-    });
-    observer.observe(document.body, { attributes: true, childList: true, subtree: true });
-
-
+            const observer = new MutationObserver(() => {
+                mainVideo.style.width = "100%";
+                mainVideo.style.left = "0px";
+            });
+            observer.observe(document.body, { attributes: true, childList: true, subtree: true });
+        }
+    }
 }
-
