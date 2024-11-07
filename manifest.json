@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Boring Ahh YouTube",
   "version": "1.1",
-  "description": "Enjoy your brain rot.",
+  "description": "Modify YouTube videos to have Subway Surfers gameplay next to them.",
   "permissions": ["storage", "scripting"],
   "background": {
     "service_worker": "background.js"
